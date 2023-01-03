@@ -12,26 +12,28 @@
                   Is active
                 </label>
 
-                <div *ngIf="mostrar">
+                <div *ngIf="mostrarMensaje">
                     Activa el checkbox para mostrar el contenido.
                 </div>
                   
               </div>
 
-            <div class="card">
-                <div class="imagen">
-                    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/640px-Angular_full_color_logo.svg.png">
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Angular</h4>
-                    <p class="card-text">
-                        Angular es un framework para aplicaciones web desarrollado en TypeScript, de codigo abierto, mantenido
-                        por Google, que se utiliza para crear y mantener aplicaciones web de una sola página
-
-                    </p>
+            <div *ngIf="mostrarCard">
+                <div class="card">
+                    <div class="imagen">
+                        <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/640px-Angular_full_color_logo.svg.png">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Angular</h4>
+                        <p class="card-text">
+                            Angular es un framework para aplicaciones web desarrollado en TypeScript, de codigo abierto, mantenido
+                            por Google, que se utiliza para crear y mantener aplicaciones web de una sola página
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
 </div>
+

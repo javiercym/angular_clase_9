@@ -7,15 +7,18 @@ import { Component } from '@angular/core';
 })
 export class CardComponent {
   check!: string;
-  mostrar = false;
+  mostrarMensaje = true;
+  mostrarCard = false;
 
   onModelChange() {
     if (this.check) {
-      this.mostrar = true;
+      this.mostrarMensaje = false;
+      this.mostrarCard = true;
       console.log('Checkbox activado');
       
     } else {
-      this.mostrar = false;
+      this.mostrarMensaje = true;
+      this.mostrarCard = false;
       console.log('Checkbox desactivado');
     }
   }
